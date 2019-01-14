@@ -2,7 +2,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MatrixAddition {
+public class matrixAddition {
 
     public static void main(String[] args) {
         Matrix matrix = new Matrix();
@@ -23,11 +23,11 @@ public class MatrixAddition {
                 int rowTwo = rowScanTwo.nextInt();
                 try {
                     if (rowTwo != row) {
-                        throw new NotValidMatrixToFindSum("row of matrix one did not matched matrix two.");
+                        throw new notValidMatrixToFindSum("row of matrix one did not matched matrix two.");
                     } else {
                         a++;
                     }
-                }catch (NotValidMatrixToFindSum invalidMatrix) {
+                }catch (notValidMatrixToFindSum invalidMatrix) {
                     System.out.println(invalidMatrix.getMessage());
                 }
             }
@@ -37,11 +37,11 @@ public class MatrixAddition {
                 int rowTwo = rowScanTwo.nextInt();
                 try {
                     if (rowTwo != row) {
-                        throw new NotValidMatrixToFindSum("column of matrix one did not matched matrix two.");
+                        throw new notValidMatrixToFindSum("column of matrix one did not matched matrix two.");
                     } else {
                         a++;
                     }
-                }catch (NotValidMatrixToFindSum invalidMatrix) {
+                }catch (notValidMatrixToFindSum invalidMatrix) {
                     System.out.println(invalidMatrix.getMessage());
                 }
             }
@@ -61,8 +61,8 @@ public class MatrixAddition {
     }
 }
 
-class NotValidMatrixToFindSum extends Exception {
-    public NotValidMatrixToFindSum(String s) {
+class notValidMatrixToFindSum extends Exception {
+    public notValidMatrixToFindSum(String s) {
         // Call constructor of parent Exception
         super(s);
     }

@@ -2,7 +2,7 @@ import java.util.*;
 import java.time.*;
 import java.text.*;
 
-public class WeekDayCalculation {
+public class weekDayCalculation {
 
 
         public static void main(String []args){

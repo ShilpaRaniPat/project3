@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class NumAndGradeOfStudents {
+public class numAndGradeOfStudents {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int[] stuGrades;
@@ -19,14 +19,14 @@ public class NumAndGradeOfStudents {
               try {
                   if (i < 0 || i > 100) {
 
-                      throw new NotValidMarks("invalid input as defined");
+                      throw new notValidMarks("invalid input as defined");
                   }
                   for(a=0;a< numOfStudents;a++){
                       stuGrades[i]=scan.nextInt();
                   }
 
               }
-              catch (NotValidMarks ex)
+              catch (notValidMarks ex)
                 {
                     System.out.println(ex.getMessage());
                     a--;
@@ -45,8 +45,8 @@ public class NumAndGradeOfStudents {
 
         }
 
-        class NotValidMarks extends Exception {
-            public NotValidMarks(String s) {
+        class notValidMarks extends Exception {
+            public notValidMarks(String s) {
                 // Call constructor of parent Exception
                 super(s);
             }

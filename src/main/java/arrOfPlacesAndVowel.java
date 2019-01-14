@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ArrOfPlacesAndVowel {
+public class arrOfPlacesAndVowel {
 
 
         public static void main(String[] args) {

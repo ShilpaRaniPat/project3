@@ -1,4 +1,4 @@
-public class AlldesiredExceptions {
+public class alldesiredExceptions {
     public static void main(String[] args){
         try {
             int a[] = new int[2];
